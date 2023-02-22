@@ -1,7 +1,7 @@
 /* CSS Minimize Reset */
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -33,7 +33,7 @@ img {
 
 body {
     background-color: var(--light-gray);
-    font-size: 15px;
+    font-size: 1em;
     font-family: 'Outfit', sans-serif;
     height: 600px;
 }
@@ -50,6 +50,11 @@ body {
     max-width: 300px;
     padding: 20px;
     background-color: var(--white);
+    border-radius: 20px;
+}
+
+.main-content__image--img {
+    width: 300px;
     border-radius: 10px;
 }
 
@@ -57,13 +62,8 @@ body {
     margin: 20px 0;
 }
 
-.main-content__description--img {
-    width: 300px;
-    border-radius: 10px;
-}
-
 .main-content__description--title {
-    font-size: 23px;
+    font-size: 1.3em;
     text-align: center;
     font-weight: 700;
     color: var(--dark-blue);
@@ -72,7 +72,7 @@ body {
 }
 
 .main-content__description--subtitle {
-    font-size: 17px;
+    font-size: 1em;
     text-align: center;
     margin-top: 20px;
     color: var(--grayish-blue);
@@ -85,6 +85,7 @@ body {
     background-color: var(--white);
     padding: 10px 0;
     text-align: center;
+    color: var(--grayish-blue);
 }
 
 .attribution a {
