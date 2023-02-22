@@ -34,8 +34,8 @@ img {
 body {
     background-color: var(--light-gray);
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    height: 550px;
+    font-family: 'Outfit', sans-serif;
+    height: 600px;
 }
 
 .content {
@@ -47,10 +47,14 @@ body {
 }
 
 .main-content {
-    max-width: 300px;
+    max-width: 250px;
     padding: 20px;
     background-color: var(--white);
     border-radius: 10px;
+}
+
+.main-content__description {
+    margin: 20px 0;
 }
 
 .main-content__description--img {
@@ -58,8 +62,9 @@ body {
 }
 
 .main-content__description--title {
+    font-size: 20px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--dark-blue);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -68,6 +73,7 @@ body {
 .main-content__description--subtitle {
     text-align: center;
     margin-top: 20px;
+    color: var(--grayish-blue);
 }
 
 .attribution {
