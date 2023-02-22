@@ -1,0 +1,129 @@
+/* CSS Minimize Reset */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* End CSS Minimize Reset */
+
+/* Start your styling from here */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+
+body {
+    background-color: var(--light-gray);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: 550px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main-content {
+    max-width: 300px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.main-content__description--img {
+    border-radius: 10px;
+}
+
+.main-content__description--title {
+    text-align: center;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content__description--subtitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--dark-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attribution a:hover, .attribution a:focus {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 375px){
+    .content {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        height: auto;
+    }
+    .content {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content {
+        padding: 0;
+    }
+    br {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100vh;
+    }
+    .attribution { 
+        padding: 20px;
+    }
+}
+  
